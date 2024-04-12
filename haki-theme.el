@@ -1184,6 +1184,10 @@ Respected Only in GUI frame"
    `(battery-load-low         ((,class :inherit highlight)))
    `(battery-load-critical    ((,class :inherit error)))
 
+;;; --- tooltip
+   `(tooltip                  ((,class :inherit highlight)))
+   `(tool-bar                 ((,class :inherit default :background ,bg-inactive)))
+
 ;;; --- solaire-mode
    `(solaire-default-face                       ((,class :inherit default :background ,bg-dim)))
    `(solaire-hl-line-face                       ((,class :inherit hl-line :background ,bg-inactive :extend t)))
