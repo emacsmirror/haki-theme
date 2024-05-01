@@ -1086,7 +1086,9 @@ Respected Only in GUI frame"
    `(magit-tag                             ((,class :background ,bg-tag :foreground ,bg-main)))
 
 ;;; --- Transient
-   `(transient-key                         ((,class :inherit help-key-binding)))
+   `(transient-key                         ((,class :inherit help-key-binding :underline nil)))
+   `(transient-key-stay                    ((,class :inherit transient-key :foreground ,info-doc)))
+   `(transient-key-exit                    ((,class :inherit transient-key)))
 
 ;;; --- Markdown
    `(markdown-blockquote-face              ((,class :font ,haki-code-font :weight medium :height 1.1 :foreground ,verbatim)))
