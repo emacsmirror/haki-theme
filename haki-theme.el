@@ -245,14 +245,14 @@ Tip: Use 'VictorMono' or 'Maple Mono'."
   (defun haki-modal-mode-line ()
     "Changes mode-line border accordingly to meow/evil states
 Respected Only in GUI frame"
-    (when (require 'meow nil t)
+    (when (featurep 'meow)
       (cond
        ((meow-beacon-mode-p) (set-face-attribute 'mode-line nil :box heading-5))
        ((meow-insert-mode-p) (set-face-attribute 'mode-line nil :box heading-4))
        ((meow-normal-mode-p) (set-face-attribute 'mode-line nil :box cursor))
        ((meow-motion-mode-p) (set-face-attribute 'mode-line nil :box heading-2))
        ((meow-keypad-mode-p) (set-face-attribute 'mode-line nil :box heading-3))))
-    (when (require 'evil nil t)
+    (when (featurep 'evil)
       (cond
        ((evil-visual-state-p) (set-face-attribute 'mode-line nil :box heading-5))
        ((evil-insert-state-p) (set-face-attribute 'mode-line nil :box heading-4))
