@@ -131,6 +131,7 @@ Since its new, there is not much, but I do have some surprise!
   - So user can change anything and not worry about it affecting other faces.
 - [ ] Work on =magit= faces more.
 - [ ] =ement= and =erc= faces.
+- [ ] Give custom options for mode-line, tab-bar highlight to be in border or region or nil.
 
 * DONE Change-log
 *** <2023-12-22> version: 0.4
