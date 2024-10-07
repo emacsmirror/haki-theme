@@ -1172,7 +1172,11 @@ Respected Only in GUI frame"
    `(tab-bar-tab-group-inactive          ((,class :box (:line-width (2 . -2) :color ,cursor))))
    `(tab-bar-tab                         ((,class :inherit region)))
    `(tab-bar-tab-inactive                ((,class :inherit mode-line-inactive)))
+;;; --- tab-line
    `(tab-line                            ((,class :background ,bg-main)))
+   `(tab-line-tab-current                ((,class :inherit region)))
+   `(tab-line-highlight                  ((,class :inherit highlight)))
+   `(tab-line-tab-inactive               ((,class :inherit shadow)))
 
 ;;; --- centaur-tabs
    `(centaur-tabs-active-bar-face               ((,class :background ,bg-inactive)))
@@ -1194,6 +1198,15 @@ Respected Only in GUI frame"
 ;;; --- tooltip
    `(tooltip                  ((,class :inherit highlight)))
    `(tool-bar                 ((,class :inherit default :background ,bg-inactive)))
+
+;;; --- whitespace
+   `(whitespace-space         ((,class :background ,bg-main :foreground ,fg-inactive)))
+   `(whitespace-tab           ((,class :inherit whitespace-space)))
+   `(whitespace-line          ((,class :inherit whitespace-space :foreground ,clock)))
+   `(whitespace-big-indent    ((,class :background ,error)))
+   `(whitespace-empty         ((,class :background ,bg-inactive)))
+   `(whitespace-hspace        ((,class :background ,bg-inactive :foreground ,fg-comment)))
+   `(whitespace-trailing      ((,class :foreground ,error)))
 
 ;;; --- solaire-mode
    `(solaire-default-face                       ((,class :inherit default :background ,bg-dim)))
