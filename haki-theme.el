@@ -128,6 +128,11 @@ Tip: Use 'VictorMono' or 'Maple Mono'."
   :group 'haki-theme
   :type 'string)
 
+(defcustom haki-bg-oled nil
+  "Apply pure black background for OLED display."
+  :group 'haki-theme
+  :type 'boolean)
+
 ;;; - declare optional function
 (declare-function meow-insert-mode-p "ext:meow")
 (declare-function meow-beacon-mode-p "ext:meow")
@@ -148,7 +153,7 @@ Tip: Use 'VictorMono' or 'Maple Mono'."
 (let ((class '((class color)))
 
       ;;; -- Sane defaults
-      (bg-main       "#050505")
+      (bg-main        (if haki-bg-oled "#000000" "#050505") )
       (bg-dim        "#121212")
       (bg-inactive   "#303030")
       (fg-comment    "#b4aeae")
