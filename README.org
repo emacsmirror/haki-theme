@@ -104,7 +104,7 @@ Since its new, there is not much, but I do have some surprise!
   - Since regions cover everywhere, you can customize it to your preference.
   Use ~M-x haki-change-region~ to choose and set a color for =haki-region=.
 
-  To make it persist on sessions, you need to add ~(setq haki-region "#hexvalue")~
+  To make it persist on sessions, you need to set face for =haki-region=
 
   - Emacs on Terminal should support 24-bit colors.
   It displays all colors for me on ~foot~ terminal.
