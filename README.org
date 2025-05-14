@@ -10,12 +10,12 @@
 #+html: <a href="https://melpa.org/#/haki-theme"><img alt="MELPA" src="https://melpa.org/packages/haki-theme-badge.svg"/></a>
 
 ------------
-** I *might no longer maintain this theme*
+** Note: I *might no longer maintain this theme*
 
-*Note*: As on [2025-01-19], I realized I did recreate a wheel, after reading up modus-themes, I remark that modus-themes is a masterpiece. Lots of options, and it can be override.
+As on [2025-01-19], I realized I did recreate a wheel, after reading up modus-themes, I remark that modus-themes is a masterpiece. Lots of options, and it can be override.
 
 The main reason I created =haki-theme= was to use pitch black background for my oled laptop, and to have punchy colors with modern suite of emacs packages.
-I realized that this was simple, so simple overriding vivendi theme gave me almost equivalent results.
+I realized that this was simple, so simply overriding vivendi theme gave me almost equivalent results.
 
 I suggest y'all to take your time and go through ~M-x modus-themes-list-colors~ and modify the palette as you like. Please kindly read up the info manual for modus-themes (it should be built-in to emacs)
 
@@ -24,6 +24,7 @@ Truly modus-themes is a masterpiece which can craft any theme as preferred.
 So far here's the config I came up to almost replace my =haki-theme=
 
 - I will be using this, and adding more changes which seems replacing of it.
+  or for more updated config that I use, please refer [[https://github.com/idlip/d-nix/blob/gol-d/d-setup.org#modus-theme-vivendi-haki][modus-vivendi-haki]]
 #+begin_src emacs-lisp
   (use-package modus-themes
     :init
